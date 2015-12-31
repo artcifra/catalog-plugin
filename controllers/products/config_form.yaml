@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: kodji.catalog::lang.product.title
+
+# Model Form Field configuration
+form: @/plugins/kodji/catalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Kodji\Catalog\Models\Product
+
+# Default redirect location
+defaultRedirect: kodji/catalog/products
+
+# Create page
+create:
+    title: Новый продукт каталога
+    redirect: kodji/catalog/products/update/:id
+    redirectClose: kodji/catalog/products
+
+# Update page
+update:
+    title: Изменить продукт
+    redirect: kodji/catalog/products
+    redirectClose: kodji/catalog/products
+
+# Preview page
+preview:
+    title: Предварительный просмотр
