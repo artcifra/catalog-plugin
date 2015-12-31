@@ -1,0 +1,21 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  id:
+    label: kodji.catalog::lang.product.id
+    searchable: true
+  name:
+    label: kodji.catalog::lang.product.name
+    searchable: true
+  price:
+    label: kodji.catalog::lang.product.price
+    searchable: true
+  category:
+    label: kodji.catalog::lang.category.name
+    searchable: true
+    type: relation
+    relation: category
+    valueFrom: name
+    default: kodji.catalog::lang.categories.uncategorized

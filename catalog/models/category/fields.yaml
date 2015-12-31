@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  name:
+    label: kodji.catalog::lang.category.name
+  description:
+    label: kodji.catalog::lang.category.description
+  image:
+    label: kodji.catalof::lang.category.image
+    type: fileupload
+    mode: image
+    imageHeight: 250
+    imageWidth: 250
