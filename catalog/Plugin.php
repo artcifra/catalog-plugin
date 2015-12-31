@@ -21,7 +21,7 @@ class Plugin extends PluginBase
             'description' => 'kodji.catalog::lang.plugin.description',
             'author'      => 'kodji',
             'icon'        => 'icon-shopping-cart',
-            'homepage'    => 'https://github.com/kodji/catalog-plugin'
+            'homepage'    => 'https://github.com/content-garden/catalog'
         ];
     }
 
