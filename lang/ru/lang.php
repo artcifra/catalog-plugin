@@ -16,6 +16,12 @@ return [
         'new_category' => 'Новая категория',
         'uncategorized' => 'Без категории'
     ],
+    'category' => [
+        'name' => 'Название категории',
+        'description' => 'Описание',
+        'uncategorized' => 'Без категории',
+        'image' => 'Изображение'
+    ],
     'products' => [
         'side_menu' => 'Товары',
         'list_title' => 'Управление товарами',
@@ -26,7 +32,7 @@ return [
     'product' => [
         'title' => 'Товар',
         'id' => 'Системный идентификатор',
-        'pid' => 'Номер продукта',
+        'partID' => 'Номер детали',
         'name' => 'Название',
         'description' => 'Описание',
         'price' => 'Цена',
@@ -40,5 +46,10 @@ return [
         'access_products' => 'Доступ к списку товаров',
         'access_categories' => 'Доступ к списку категорий каталога',
         'access_import' => 'Возможность пакетного импорта данных'
+    ],
+    'widgets' => [
+        'chart_products_wrong' => 'Не отображаются',
+        'chart_products_ok' => 'Отображаются',
+        'chart_products_total' => 'Всего элементов в каталоге'
     ]
 ];

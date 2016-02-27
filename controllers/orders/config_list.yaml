@@ -3,22 +3,22 @@
 # ===================================
 
 # Model List Column configuration
-list: $/kodji/catalog/models/product/columns.yaml
+list: $/kodji/catalog/models/order/columns.yaml
 
 # Model Class name
-modelClass: Kodji\Catalog\Models\Product
+modelClass: Kodji\Catalog\Models\Order
 
 # List Title
-title: Управление товарами
+title: Manage Orders
 
 # Link URL for each record
-recordUrl: kodji/catalog/products/update/:id
+recordUrl: kodji/catalog/orders/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
 
 # Records to display per page
-recordsPerPage: 50
+recordsPerPage: 20
 
 # Displays the list column set up button
 showSetup: true
@@ -27,15 +27,18 @@ showSetup: true
 showSorting: true
 
 # Default sorting column
-#defaultSort:
-#    column: partID
-#    direction: asc
+# defaultSort:
+#     column: created_at
+#     direction: desc
 
 # Display checkboxes next to each record
 # showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:
+    # Partial for toolbar buttons
     buttons: list_toolbar
+
+    # Search widget configuration
     search:
-        prompt: Поиск
+        prompt: backend::lang.list.search_prompt

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Order
+
+# Model Form Field configuration
+form: $/kodji/catalog/models/order/fields.yaml
+
+# Model Class name
+modelClass: Kodji\Catalog\Models\Order
+
+# Default redirect location
+defaultRedirect: kodji/catalog/orders
+
+# Create page
+create:
+    title: Create Order
+    redirect: kodji/catalog/orders/update/:id
+    redirectClose: kodji/catalog/orders
+
+# Update page
+update:
+    title: Edit Order
+    redirect: kodji/catalog/orders
+    redirectClose: kodji/catalog/orders
+
+# Preview page
+preview:
+    title: Preview Order

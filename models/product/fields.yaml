@@ -1,9 +1,15 @@
 fields:
+  partID:
+    label: kodji.catalog::lang.product.partID
+    span: auto
   name:
     label: kodji.catalog::lang.product.name
     span: auto
   price:
     label: kodji.catalog::lang.product.price
+    span: auto
+  quantity:
+    label: Остаток
     span: auto
 tabs:
   fields:
@@ -21,6 +27,13 @@ tabs:
       label: kodji.catalog::lang.product.id
       tab: kodji.catalog::lang.product.additional_tab
       disabled: true
+    is_shown:
+      label: Товар отображается в каталоге для пользователей?
+      tab: kodji.catalog::lang.product.additional_tab
+      type: dropdown
+      options:
+        1: Да
+        0: Нет
     image:
       label: kodji.catalog::lang.product.image
       type: fileupload

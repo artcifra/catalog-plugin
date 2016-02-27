@@ -1,7 +1,25 @@
-<div data-control="toolbar">
-    <a
-        href="<?= Backend::url('kodji/catalog/products/create') ?>"
-        class="btn btn-primary oc-icon-plus">
-        Новый продукт
-    </a>
+<div class="scoreboard">
+    <div data-control="toolbar">
+        <div class="col-md-6">
+            <a
+                href="<?= Backend::url('kodji/catalog/products/create') ?>"
+                class="btn btn-primary oc-icon-plus">
+                Создать
+            </a>
+            <a
+                href="<?= Backend::url('kodji/catalog/products/import') ?>"
+                class="btn btn-primary oc-icon-wrench">
+                Импортировать из файла
+            </a>
+        </div>
+        <div class="col-md-6">
+            <div class="scoreboard-item control-chart" data-control="chart-pie">
+                <ul>
+                    <li data-color="#e5a91a"><?= e(trans('kodji.catalog::lang.widgets.chart_products_wrong')) ?> <span><?= $productsWrong ?></span></li>
+                    <li data-color="#95b753"><?= e(trans('kodji.catalog::lang.widgets.chart_products_ok')) ?> <span><?= $productsOK ?></span></li>
+                    <!--                <li data-color="#cccccc"><?= e(trans('kodji.catalog::lang.widgets.chart_products_total')) ?> <span><?= $productsTotal ?></span></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

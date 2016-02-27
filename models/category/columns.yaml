@@ -8,5 +8,5 @@ columns:
         searchable: true
     name:
         label: kodji.catalog::lang.category.name
-    description:
-        label: kodji.catalog::lang.category.description
+    products_count:
+        label: Товаров в категории

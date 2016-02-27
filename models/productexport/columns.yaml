@@ -1,0 +1,9 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+  id: ID
+  name: NAME
+  price: PRICE
+  category: CATEGORY

@@ -1,0 +1,48 @@
+{% if CategoryProducts.getProducts|length == 0 %}
+<div class="alert alert-info" role="alert"> <strong>Внимание!</strong> В этой категории пока что не добавлены товары.</div>
+{% endif %}
+
+{% if CategoryProducts.getProducts|length > 0 %}
+<div class="table-responsive">
+	<table class="table table-condensed table-striped">
+		<thead>
+			<tr>
+				<th width="10%">#</th>
+				<th width="10%">Фото</th>
+				<th width="50%">Наименование</th>
+				<th width="10%">Цена</th>
+				<th width="20%"></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in CategoryProducts.getProducts %}
+			<tr>
+				<th scope="row">{{ p.partID }}</th>
+				<td>{% if p.image.path %}<img style="max-height:20px" src="{{ p.image.path }}" alt="{{ p.name }}">{% endif %}</td>
+				<td>{{ p.name }}
+					{% if p.description|length > 0 %}
+					 <small>{{ p.description|raw }}</small>
+					{% endif %}
+				</td>
+				<td>{% if user %}
+						{{ p.price }}
+					{% else %}
+						Войти
+					{% endif %}
+					</td>
+				<td>
+					{% if p.quantity > 0 %}
+						<!-- {{ p.quantity }} --> 
+						Купить
+					{% else %}
+						Заказать
+					{% endif %}
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+{% endif %}
+

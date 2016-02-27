@@ -32,10 +32,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Kodji\Catalog\Components\MyComponent' => 'myComponent',
+            'Kodji\Catalog\Components\Categories' => 'Categories',
+            'Kodji\Catalog\Components\CategoryProducts' => 'CategoryProducts'
         ];
     }
 
@@ -89,12 +88,6 @@ class Plugin extends PluginBase
                         'icon'        => 'icon-list-ul',
                         'url'         => Backend::url('kodji/catalog/categories'),
                         'permissions' => ['kodji.catalog.access_categories']
-                    ],
-                    'import' => [
-                        'label'       => 'kodji.catalog::lang.import.side_menu',
-                        'icon'        => 'icon-file-excel-o',
-                        'url'         => Backend::url('kodji/catalog/import'),
-                        'permissions' => ['kodji.catalog.access_import']
                     ]
                 ]
             ]

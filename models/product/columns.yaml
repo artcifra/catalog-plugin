@@ -3,15 +3,25 @@
 # ===================================
 
 columns:
-  id:
-    label: kodji.catalog::lang.product.id
-    searchable: true
+<<<<<<< HEAD
   name:
     label: kodji.catalog::lang.product.name
+    searchable: true
+  partID:
+    label: kodji.catalog::lang.product.partID
     searchable: true
   price:
     label: kodji.catalog::lang.product.price
     searchable: true
+  quantity:
+    label: Остаток
+    searchable: false
+  is_shown:
+    label: Отображается
+    type: switch
+    options:
+      1: Да
+      0: Нет
   category:
     label: kodji.catalog::lang.category.name
     searchable: true

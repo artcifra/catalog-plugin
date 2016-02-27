@@ -19,7 +19,8 @@ return [
     'category' => [
         'name' => 'Category name',
         'description' => 'Description',
-        'uncategorized' => 'No category'
+        'uncategorized' => 'No category',
+        'image' => 'Image'
     ],
     'products' => [
         'side_menu' => 'Products',
@@ -31,7 +32,7 @@ return [
     'product' => [
         'title' => 'Product',
         'id' => 'System ID',
-        'pid' => 'Product ID',
+        'partID' => 'Partial ID',
         'name' => 'Name',
         'description' => 'Description',
         'price' => 'Price',
@@ -48,5 +49,10 @@ return [
         'access_products' => 'Access products list',
         'access_categories' => 'Access categories list',
         'access_import' => 'Access import data functionality'
+    ],
+    'widgets' => [
+        'chart_products_wrong' => 'Hidden',
+        'chart_products_ok' => 'Visible',
+        'chart_products_total' => 'Total'
     ]
 ];

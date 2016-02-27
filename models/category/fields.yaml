@@ -7,8 +7,9 @@ fields:
     label: kodji.catalog::lang.category.name
   description:
     label: kodji.catalog::lang.category.description
+    type: richeditor
   image:
-    label: kodji.catalof::lang.category.image
+    label: kodji.catalog::lang.category.image
     type: fileupload
     mode: image
     imageHeight: 250

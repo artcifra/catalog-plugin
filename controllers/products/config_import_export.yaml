@@ -1,0 +1,19 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+import:
+    title: Импорт каталога
+    list: $/kodji/catalog/models/productimport/columns.yaml
+    form: $/kodji/catalog/models/productimport/fields.yaml
+    modelClass: Kodji\Catalog\Models\ProductImport
+    redirect: kodji/catalog/products
+    permissions: kodji.catalog.access_import
+
+export:
+    title: Экспорт каталога
+    fileName: catalog.csv
+    list: $/kodji/catalog/models/productsexport/columns.yaml
+    modelClass: Kodji\Catalog\Models\ProductExport
+    redirect: kodji/catalog/products
+    permissions: rainlab.blog.access_import

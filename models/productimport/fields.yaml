@@ -1,0 +1,7 @@
+fields:
+  name:
+    label: kodji.catalog::lang.product.name
+    span: auto
+  price:
+    label: kodji.catalog::lang.product.price
+    span: auto

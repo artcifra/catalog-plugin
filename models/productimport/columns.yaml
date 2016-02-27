@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  partID:
+    label: kodji.catalog::lang.product.partID
+    searchable: true
+  name:
+    label: kodji.catalog::lang.product.name
+    searchable: true
+  price:
+    label: kodji.catalog::lang.product.price
+    searchable: true

@@ -3,15 +3,15 @@
 use Model;
 
 /**
- * Product Model
+ * Order Model
  */
-class Product extends Model
+class Order extends Model
 {
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'kodji_catalog_products';
+    public $table = 'kodji_catalog_orders';
 
     /**
      * @var array Guarded fields
@@ -28,26 +28,12 @@ class Product extends Model
      */
     public $hasOne = [];
     public $hasMany = [];
-    public $belongsTo = [
-        'category' => ['Kodji\Catalog\Models\Category', 'table' => 'kodji_catalog_categories']
-    ];
-    /**
-     * @var array Relations
-     */
+    public $belongsTo = [];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
-    public $attachOne = [
-        'image' => ['System\Models\File']
-    ];
+    public $attachOne = [];
     public $attachMany = [];
 
-    public function scopeIsShown($query)
-    {
-        return $query
-            ->whereNotNull('is_shown')
-            ->where('is_shown', 1)
-            ;
-    }
 }

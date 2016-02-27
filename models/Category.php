@@ -1,6 +1,7 @@
 <?php namespace Kodji\Catalog\Models;
 
 use Model;
+use Kodji\Catalog\Models\Product;
 
 /**
  * Category Model
@@ -40,4 +41,8 @@ class Category extends Model
     ];
     public $attachMany = [];
 
+    public function getProductsCountAttribute()
+    {
+        return $this->product()->count();
+    }
 }

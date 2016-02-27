@@ -14,10 +14,11 @@ class CreateProductsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('category_id');
+            $table->string('partID')->nullable();
             $table->string('name')->nullable();
             $table->string('description')->nullable();
-            $table->string('price')->nullable();
-            $table->string('image')->nullable();
+            $table->float('price')->nullable();
+            $table->integer('quantity')->nullable();
             $table->boolean('is_shown')->default(0);
             $table->timestamps();
         });
